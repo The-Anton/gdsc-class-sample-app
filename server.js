@@ -25,7 +25,9 @@ app.delete('/user', (req, res) => {
   res.send('Got a DELETE request at /user')
 })
 
-app.listen(port, () => {
+
+app.listen(process.env.PORT || 5000,() => {
   console.log(`Example app listening on port ${port}`)
 })
+
 
